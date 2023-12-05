@@ -6,7 +6,7 @@
   "scripts": {
     "build-js": "browserify ./src/app.js -o ./public/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "letsgo":"install"
+    "build":""
   },
   "author": "",
   "license": "ISC",

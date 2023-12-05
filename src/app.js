@@ -10,7 +10,7 @@
   refreshimg();
   function sfwChange(){
     const categoriesSFW=['waifu','neko','shinobu','megumin','bully','cuddle','hug','awoo','kiss','lick','pat','smug','bonk','yeet','blush','smile','happy','poke'];
-    let p =document.getElementById('categorySelect'); 
+    let p =document.getElementById('#categorySelect'); 
     while(p.hasChildNodes()){
       p.removeChild(p.firstChild);
     }
