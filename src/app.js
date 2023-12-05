@@ -25,7 +25,7 @@
   
   function nsfwChange(){
     const categoriesNSFW=['waifu','neko','blowjob'];
-    let p =document.getElementById('categorySelect'); 
+    let p =document.getElementById('#categorySelect'); 
     while(p.hasChildNodes()){
       p.removeChild(p.firstChild);
     }
