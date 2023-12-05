@@ -2,7 +2,7 @@
   
   async function refreshimg() {
     const forWork=document.querySelector('#sfwChecker > input:checked ').value;
-    const category=document.querySelector('categorySelect').value;
+    const category=document.querySelector('#categorySelect').value;
     const response = await fetch("https://api.waifu.pics/"+forWork+"/"+category); 
     const images = await response.json();
     document.getElementById("js-link").src=images["url"];
@@ -37,7 +37,7 @@
       x.textContent=categoriesNSFW[i];
     }
   }
-  document.getElementById("sfwbutton").addEventListener("click",sfwChange);
-  document.getElementById("nsfwbutton").addEventListener("click",nsfwChange);
-  document.getElementById("button").addEventListener("click",refreshimg);
+  document.getElementById("#sfwbutton").addEventListener("click",sfwChange);
+  document.getElementById("#nsfwbutton").addEventListener("click",nsfwChange);
+  document.getElementById("#button").addEventListener("click",refreshimg);
   
