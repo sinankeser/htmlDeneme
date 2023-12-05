@@ -3,7 +3,7 @@
   
   async function refreshimg() {
     const forWork=document.querySelector('#sfwChecker > input:checked ').value;
-    const category=document.querySelector('categorySelect').value;
+    const category=document.querySelector('#categorySelect').value;
     const response = await fetch("https://api.waifu.pics/"+forWork+"/"+category); 
     const images = await response.json();
     document.getElementById("js-link").src=images["url"];
