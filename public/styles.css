@@ -1,4 +1,32 @@
 #js-link{
-    max-width:400px;
+    max-height:500px;
+    max-width:600px;
     height:auto;
+    width:auto;
+}
+html{
+    background-color:rgb(31, 56, 56);
+    color:rgb(85, 99, 85);
+}
+#button{
+    background-color:rgb(87, 105, 105);
+    border-radius:5%;
+    top:10px;
+    max-height:50px;
+}
+#images{
+    width:500px;
+    height:500px;
+    display:flex;
+    position:sticky;
+    margin-bottom:10px;
+} 
+label{
+    color:black;
+}
+#sfwChecker{
+    background-color:darkslategray;
+    border:1px solid black;
+    max-width: 150px;
+    margin-bottom: 20px;
 }

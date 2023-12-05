@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles.css">
-    <script src="bundle.js"></script>
-  <script type="text/javascript" >
-
-    async function logMovies() {
-      const response = await fetch("https://api.waifu.pics/sfw/waifu");
-      const movies = await response.json();
-      document.getElementById("js-link").src=movies["url"]; 
-    }
   
-  </script>
-
-  <head>
-    <title>Deneme</title>
-  </head>
-  <div id="images"></div>
-<img id="js-link" alt="waiting for img" width="500px" height="auto">
-<input type="button" value="refresh" id="button" onclick="logMovies()">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Cache-control" content="public">
+  <link rel="stylesheet" href="styles.css">
+  <title>Deneme</title>
+</head>
+  <div id="sfwChecker">
+    <input type="radio" name="sfw/nsfw" id="sfwbutton"  value="sfw"  title= "sfw/nsfw" checked onclick="sfwChange()"><label for= "sfwbutton" >  SFW</label>
+    <input type="radio" name="sfw/nsfw" id="nsfwbutton" value="nsfw" title="sfw/nsfw" onclick="nsfwChange()"><label for="nsfwbutton" > NSFW</label> 
  
+  </div>
+  <div id="categoryChecker">
+    <select title="categorySelect" id="categorySelect"> 
+      <option value="waifu" selected="selected">waifu</option>
+      <option value="neko">neko</option>
+      <option value="shinobu">shinobu</option>
+      <option value="megumin">megumin</option>
+      <option value="bully">bully</option>
+      <option value="cuddle">cuddle</option>
+      <option value="hug">hug</option>
+      <option value="awoo">awoo</option>
+      <option value="kiss">kiss</option>
+      <option value="lick">lick</option>
+      <option value="pat">pat</option>
+      <option value="smug">smug</option>
+      <option value="bonk">bonk</option>
+      <option value="yeet">yeet</option>
+      <option value="blush">blush</option>
+      <option value="smile">smile</option>
+      <option value="happy">happy</option>
+      <option value="poke">poke</option>
+    </select>
+  </div>
+  
+  <div id="images" >
+    <img id="js-link" alt="waiting for img" >
+   
+  </div>
+  <input type="button" value="refresh" id="button" >
+  <select id="select" title="select">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option> 
+  </select>
+  
+  <script type="text/javascript" src="bundle.js"></script>
+  <script  type="text/javascript">
+    
+  </script>
 </html>
