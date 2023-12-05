@@ -2,7 +2,7 @@
   "name": "htmldeneme",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "build-js": "browserify ./src/app.js -o ./public/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
